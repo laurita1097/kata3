@@ -9,8 +9,17 @@ public class Kata3 {
 
     
     public static void main(String[] args) {
-        HistogramDisplay histo = new HistogramDisplay();
-        histo.execute();
-        
+        Histogram histogram = new Histogram();
+        histogram.increment("ulpgc.es");
+        histogram.increment("ulpgc.es");
+        histogram.increment("ull.es");
+        histogram.increment("ull.es");
+        histogram.increment("ull.es");
+        histogram.increment("hotmail.es");
+        histogram.increment("gmail.es");
+        histogram.increment("gmail.es");
+        histogram.increment("facebook.es");
+        histogram.increment("ulpgc.es");
+        new HistogramDisplay(histogram).execute();
     }
 }
